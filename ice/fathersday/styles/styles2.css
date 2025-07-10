@@ -1,0 +1,208 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* playful font */
+    line-height: 1.6;
+    background: #ffe066; /* sunny yellow */
+    color: #444;
+    padding: 20px;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fffbe6; /* light creamy background */
+    box-shadow: 0 10px 30px rgba(255, 165, 0, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #ff9f1c; /* bright orange border */
+    transition: transform 0.3s ease;
+}
+
+#wrapper:hover {
+    transform: scale(1.02);
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff6f61; /* lively coral */
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(255, 111, 97, 0.6);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #aa2e25;
+    padding: 8px 15px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff9472, #ff6f61);
+    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(45deg, #ffd9cc, #ffb3a7);
+    color: #5a1e12;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.7);
+}
+
+/* Main Content */
+main {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px #ffb3a7;
+    animation: bounce 2s infinite;
+}
+
+/* Bounce animation for main title */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 25px rgba(255, 111, 97, 0.4);
+    transition: transform 3s ease;
+}
+
+main img:hover {
+    transform: rotate(360deg) scale(1.05);
+}
+
+/* Sections */
+section {
+    margin-bottom: 35px;
+    text-align: left;
+    background: #fff3e0;
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(255, 159, 28, 0.3);
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    background-color: #fff8e1;
+    box-shadow: 0 10px 20px rgba(255, 159, 28, 0.5);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff6f61;
+    border-bottom: 3px dashed #ff9f1c;
+    padding-bottom: 6px;
+    width: fit-content;
+    letter-spacing: 1.5px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #6b4c3b;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: #fffbe6;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-top: 3px dashed #ff9f1c;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-shadow: 1px 1px 2px #aa2e25;
+}
+footer img{
+        transition: transform 3s ease;
+}
+
+footer img:hover {
+    transform: rotate(360deg) scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Section Background Images with playful bouncing icons */
+/* Section Background Images with original photos and floating animation */
+main section:nth-of-type(1) {
+    background: url("../images/dinner_with_dad.jpeg") no-repeat right center;
+    background-size: 150px 150px;
+    padding-right: 180px;
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+main section:nth-of-type(2) {
+    background: url("../images/family_photo.jpeg") no-repeat right center;
+    background-size: 150px 150px;
+    padding-right: 180px;
+    animation: floatUpDown 5s ease-in-out infinite;
+}
+
+main section:nth-of-type(3) {
+    background: url("../images/water-gun_fight.jpeg") no-repeat right center;
+    background-size: 150px 150px;
+    padding-right: 180px;
+    animation: floatUpDown 3.5s ease-in-out infinite;
+}
+
+/* Floating up and down animation */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}

@@ -1,0 +1,77 @@
+
+body {
+    background:ivory;
+    background-image: url("../images/bedroom_background.jpg");
+
+}
+
+#wrapper {
+    background: skyblue;
+    width: 900px;
+    margin: auto;
+    border: 3px solid #384856;
+    border-radius: 10px;
+}
+header{
+    background-image: url("../images/bedroom_background.jpg");
+    background-position: 0 50px;
+    padding: 30px;
+}
+header img {
+    width:140px;
+
+}
+header h1 {
+    display: inline;
+    font-size: 3em;
+    float: right;
+    color:ivory;
+}
+nav {
+    background-color: #384856;
+    width: 100%;
+    border: 4px solid #2e7168;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: ivory;
+    padding:10px 30px;
+}
+nav a:hover{
+    background:#2e7168;
+    text-shadow: 4px 4px 2px #384856;
+}
+footer form{
+    background: #e6e1ce;
+    width: 180px;
+    padding: 10px;
+    border: 3px dotted #384856;
+    border-radius: 10px;
+    position:fixed;
+    bottom: 0;
+    right: 20px;
+}
+section {
+    border: 3px solid #2e7168;
+    background: #e6e1ce;
+    width: 32%;
+    float: left;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin: 10px 5px;
+}
+
+section img{
+    width: 200px;
+
+}
+table {
+    clear: both 20px;
+    width: 100%;
+}
